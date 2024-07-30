@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styling.css" />
+    <title>Coffee Masters</title>
+  </head>
+  <body>
+    <header>
+      <img src="coffee-image.png" />
+      <p>Coffee Masters</p>
+    </header>
+    <section class="page">
+      <div class="items-list">
+        <label for="Items">Items:</label>
+        <div class="item-1 item">
+          <div class="item-detail">
+            <p class="item-number">1x</p>
+            <p>Cappuccino</p>
+            <p class="price">$3.35</p>
+          </div>
+          <p class="specialities">Lite foam</p>
+        </div>
+        <div class="item-2 item">
+          <div class="item-detail">
+            <p>1x</p>
+            <p>Cappucino</p>
+            <p>$3.85</p>
+          </div>
+          <p class="specialities">Lite milk</p>
+          <p class="specialities">Double espresso</p>
+        </div>
+        <div class="item-3 item">
+          <div class="item-detail">
+            <p>1x</p>
+            <p>Croissant</p>
+            <p>$2.45</p>
+          </div>
+          <p class="specialities">Butter</p>
+        </div>
+      </div>
+      <div class="order-name">
+        <label for="Order">Order Name</label>
+        <input name="Order" type="text" placeholder="Order" />
+      </div>
+      <div class="payment-details">
+        <div class="">
+          <label for="payment">Payment</label>
+          <div>
+            <label for="card" class="Card">Card</label>
+            <input type="text" class="card-number" />
+          </div>
+          <div class="ccv">
+            <label for="CCV" class="CCV">CCV</label>
+            <input type="text" class="CCV-number" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="total-price">
+      <p>Subtotal:</p>
+      <p>Tax:</p>
+      <p>Total:</p>
+    </div>
+    
+    <button class="submit-button">Place Order</button>
+  </body>
+</html>

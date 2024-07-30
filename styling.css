@@ -1,0 +1,208 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-color: rgb(80, 29, 6);
+}
+header img{
+  width: 10%;
+  mix-blend-mode: multiply;
+}
+body{
+  background-color:#efefef;
+}
+
+.page{
+  display: grid;
+  grid-template-areas:"items order "
+  "items payment";
+  column-gap: 10px;
+
+}
+
+
+.items-list{
+  position: relative;
+  grid-area:items;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(12, 12, 12);
+  background-color: rgba(203, 155, 135, 0.873);
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px black;
+}
+.items-list label{
+  position: absolute;
+  left: 3%;
+  top: 7%;
+}
+.item{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.item-detail{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+}
+.item-detail p:first-child{
+  flex: .2;
+}
+.item-detail label{
+  content: "Item: ";
+  position: absolute;
+  top: -10px;
+  left: -2px;
+  display: block;
+  font-weight: bold;
+}
+.item-detail p:last-child{
+  flex: 1;
+  text-align: right;
+}
+.item-number{
+  justify-self:start ;
+}
+
+.specialities{
+  align-self: flex-start;
+  padding-left:17%;
+  color: rgb(111, 68, 48);
+}
+
+
+.order-name{
+  position: relative;
+  grid-area:order;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-color: rgb(186, 162, 151);
+  padding: 20px;
+  margin-top: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px black;
+}
+
+.order-name label{
+  color: brown;
+  background-color:rgb(186, 162, 151) ;
+  font-size: 20px;
+  font-size:10px ;
+  position: absolute;
+  top: 30%;
+  left: 28%;
+  display: block;
+  font-weight: bold;
+}
+
+.order-name input{
+  width: 50%;
+  background-color:rgb(186, 162, 151) ;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid rgb(152, 59, 49);
+  border-radius: 10px;
+  outline: none;
+}
+
+
+
+.payment-details{
+  position: relative;
+  grid-area:payment;
+  
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-color:rgb(186, 162, 151);
+  padding: 20px;
+  margin-top: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px black;
+}
+.payment-details input{
+  width: 50%;
+  background-color:rgb(186, 162, 151) ;
+  padding: 4px;
+  border: 1px solid rgb(152, 59, 49);
+  border-radius: 10px;
+  margin: 10px;
+  outline: none;
+}
+.payment-details label{
+  color: brown;
+  background-color:rgb(186, 162, 151);
+  font-size: 15px;
+  position: absolute;
+  top: 6%;
+  left: 3%;
+}
+.Card.Card.Card{
+  color:brown;
+  position: absolute;
+  top: 14%;
+  left: 29%;
+}
+.CCV.CCV{
+  color:brown;
+  position: absolute;
+  top: 46%;
+  left: 29%;
+
+}
+.total-price{
+  /* grid-area:total; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(99, 19, 19);
+  background-color: rgb(186, 162, 151);
+  padding:20px 20px;
+  width: 200px;
+  margin:2% auto 1% auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px black;
+}
+
+
+.submit-button{
+  cursor: pointer;
+  display: block;
+  background-color: rgb(80, 29, 6);
+  color: white;
+  padding: 7px;
+  margin: 0px auto;
+  border: none;
+  border-radius: 7px;
+  width: 50%;
+
+}
